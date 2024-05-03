@@ -35,7 +35,7 @@ using System.Collections.Generic;
 
 int[] nums = { 2, 7, 11, 15 }; int target = 9;
 
-var result = Solution.GetAnswer(nums, target);
+var result = Solution.TwoSumBruteForce(nums, target);
 
 Console.WriteLine("The answer is : " + result);
 
