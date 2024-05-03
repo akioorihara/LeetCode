@@ -1,8 +1,33 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/* The LeetCode Problem 14 */
+
+//Write a function to find the longest common prefix string amongst an array of strings.
+//If there is no common prefix, return an empty string "".
+
+//Example 1:
+
+//Input: strs = ["flower", "flow", "flight"]
+//Output: "fl"
+//Example 2:
+
+//Input: strs = ["dog", "racecar", "car"]
+//Output: ""
+//Explanation: There is no common prefix among the input strings.
 
 
+//Constraints:
 
+//1 <= strs.length <= 200
+//0 <= strs[i].length <= 200
+//strs[i] consists of only lowercase English letters.
+
+using Solution14;
+
+//Example 1: 
+string[] strs = new string[]{"flower", "flow", "flight" };
+
+//Instantiate the class before calling the method 
+Solutions solution = new Solutions();
+solution.LongestCommonPrefix(strs);
 
 
 Console.ReadLine();
