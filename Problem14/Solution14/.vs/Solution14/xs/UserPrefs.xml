@@ -1,24 +1,35 @@
 ﻿<Properties StartupConfiguration="{D54AB839-E3C9-4841-A96A-3FA733037FA4}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/akioorihara/Library/CloudStorage/OneDrive-Personal/GitHub/LeetCode/Problem14/Solution14/Solution14/Solutions.cs" relfile="Solution14/Solutions.cs" line="57" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Solution14/Solutions.cs">
-    <Files>
-      <File FileName="Solution14/Program.cs" />
-      <File FileName="Solution14/Solutions.cs" Line="8" Column="4" />
-    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Solution14" expanded="True">
-            <Node name="Solution14" expanded="True" />
+            <Node name="Solution14">
+              <Node name="Solutions.cs" selected="True" />
+            </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>str[i]</Value>
+          <Value>strs[j][i]</Value>
+          <Value>str</Value>
+          <Value>i</Value>
+          <Value>j</Value>
+          <Value>strs[j]</Value>
+          <Value>res</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Solution14 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Solution14 PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
