@@ -32,44 +32,41 @@ namespace Solution14
             //0 <= strs[i].length <= 200
 
 
-            //strs[i] consists of only lowercase English letters.
-            var isFailed = CheckLowerCaseEnglish(strs);
-            if (isFailed)
-                return "";
-
+            string res = string.Empty;
+            string str = strs[0];
 
             //Logic
 
-            string result = "";
-
-            //Input: strs = ["flower", "flow", "flight"]
-            for (int i = 1; i < strs.Length; i++)
+            //Get the shortest string 
+            foreach(var s in strs)
             {
-                for(int j = 0; j < strs.Length; j++)
+                if(s.Length < str.Length)
                 {
-                    if (strs[0][j] == strs[i][j])
+                    str = s;
+                }
+            }
+
+            //Get the smallest string len 
+            int len = strs.Length;
+
+
+            for(int i = 0; i < strs.Length; i++)
+            {
+                for(int j = 0; j < len; j++)
+                {
+                    if (str[i] == strs[j][i])
                     {
                         continue;
                     }
                     else
                     {
-
+                        return res;
                     }
-
                 }
-
-
-                if (strs[0][i] == strs[i][-i])
-                {
-                    //result += strs[0][i];
-                }
-               
-
+                res += str[i];
             }
 
-
-
-            return "";
+            return res;
 		}
 
 
