@@ -22,3 +22,12 @@
 using ReverseString;
 
 string[] input = new string[]{ "h", "e", "l", "l", "o" };
+Solutions solutions = new Solutions();
+
+solutions.ReverseStringArray(input);
+
+char[] chars = new char[] {'h', 'e', 'l', 'l', 'o'};
+solutions.ReverseString(chars);
+
+Console.WriteLine("");
+Console.ReadLine();
