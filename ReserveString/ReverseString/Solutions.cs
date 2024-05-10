@@ -17,6 +17,9 @@
 			public void ReverseString(char[] s)
 			{
 				List<string> reverse = new List<string> { };
+				string[] strings = new string[] { };
+				//strings = s.ToArray<string>(){ };
+
 
 				//The array is empty, return with an empty array 
 				int counter = s.Length - 1;
@@ -24,13 +27,16 @@
 				for (int i = 0; i < s.Length; i++)
 				{
 					//reverse.Add(s[counter]);
+					reverse.Add(s[counter].ToString());
 					counter--;
 				}
 
-				Console.WriteLine(reverse);
+				//Console.WriteLine(reverse.ToString());
+				Console.WriteLine(string.Join("", reverse));
+			// Print the reversed list
 
-			}
-
+		}	
+	
 
 			/// <summary>
 			/// 
