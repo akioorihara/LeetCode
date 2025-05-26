@@ -28,7 +28,8 @@ var solution = new Solution();
 // Test Case 1 
 int[] numbers = new int[] { 1, 2, 3, 3};
 
-var testCaseOne = solution.HasDuplicate(numbers);
+//var testCaseOne = solution.HasDuplicate(numbers);
+var testCaseOne = solution.DetectDuplicate(numbers);
 
 Console.WriteLine("Has duplicate(s)? : " + testCaseOne);
 
@@ -36,7 +37,8 @@ Console.WriteLine("Has duplicate(s)? : " + testCaseOne);
 // Test Case 2 
 numbers = new int[] { 1, 2, 3, 4};
 
-var testCaseTwo = solution.HasDuplicate(numbers);
+//var testCaseTwo = solution.HasDuplicate(numbers);
+var testCaseTwo = solution.DetectDuplicate(numbers);
 
 Console.WriteLine("Has duplicate(s)? : " + testCaseTwo);
 

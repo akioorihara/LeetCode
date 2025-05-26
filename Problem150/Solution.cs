@@ -50,6 +50,38 @@ namespace Problem150
 			}
             return false;
         }
+
+
+
+
+
+		/// <summary>
+		/// This is the revised version of 217 Has Duplicate
+		/// </summary>
+		/// <param name="nums"></param>
+		/// <returns></returns>
+		public bool DetectDuplicate(int[] nums)
+		{
+			var seen = new HashSet<int>();
+
+			foreach(var num in nums)
+			{
+				if (seen.Add(num))
+				{
+					//keep looping and successfully added the value 
+				}
+				else
+				{
+					return true;
+					//unable to add = found a dup
+				}
+			}
+
+			return false;
+
+		}
+
+
     }
 }
 
