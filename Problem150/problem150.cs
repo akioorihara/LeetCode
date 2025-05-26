@@ -13,3 +13,15 @@ Output: false
 */
 
 
+
+public class Solution
+{
+    public bool hasDuplicate(int[] num)
+    {
+        
+    }
+}
+
+
+
+ 
