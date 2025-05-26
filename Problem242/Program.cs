@@ -25,7 +25,7 @@ Console.WriteLine("Starts the problem 242 - Valid Anagram");
 var solution = new Solutions();
 
 // Test case 1 
-var result = solution.IsAnagram("anagram", "anagram");
+var result = solution.IsAnagram("anagram", "nagaram");
 Console.WriteLine($"Is Anagram : {result}");
 
 // Test case 2 
