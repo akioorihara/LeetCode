@@ -99,6 +99,48 @@ namespace Problem242
 
             return true; 
 		}
-	}
+
+
+		/// <summary>
+		/// This is the solution provided for the better ways 
+		/// </summary>
+		/// <param name="s"></param>
+		/// <param name="t"></param>
+		/// <returns></returns>
+        public bool V2(string s, string t)
+        {
+            if (s.Length != t.Length)
+                return false;
+
+            var count = new Dictionary<char, int>();
+
+            // Count characters in 's'
+            foreach (var c in s)
+            {
+                if (count.ContainsKey(c))
+                    count[c]++;
+                else
+                    count[c] = 1;
+            }
+
+            // Subtract count based on characters in 't'
+            foreach (var c in t)
+            {
+                if (!count.ContainsKey(c))
+                    return false;
+
+                count[c]--;
+
+                if (count[c] < 0)
+                    return false;
+            }
+
+            // All values should be 0 if it's a valid anagram
+            return true;
+        }
+
+
+    }
+
 }
 
