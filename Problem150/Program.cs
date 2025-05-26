@@ -25,13 +25,22 @@ Console.WriteLine("Starts - Leetcode 150");
 
 var solution = new Solution();
 
-int[] numbers = new int[] { 1, 2, 3, 4, 5, 6 };
-
+// Test Case 1 
+int[] numbers = new int[] { 1, 2, 3, 3};
 
 var testCaseOne = solution.HasDuplicate(numbers);
 
+Console.WriteLine("Has duplicate(s)? : " + testCaseOne);
 
-Console.WriteLine("Test Case Result :" + testCaseOne);
+
+// Test Case 2 
+numbers = new int[] { 1, 2, 3, 4};
+
+var testCaseTwo = solution.HasDuplicate(numbers);
+
+Console.WriteLine("Has duplicate(s)? : " + testCaseTwo);
+
+
 
 Console.ReadLine();
 
