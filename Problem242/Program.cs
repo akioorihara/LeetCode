@@ -30,7 +30,7 @@ Console.WriteLine($"Is Anagram : {result}");
 
 // Test case 2 
 result = solution.IsAnagram("rat", "car");
-Console.WriteLine($"Is Anagram : {result}");
+Console.WriteLine($"Is Anagram : rat | car |  {result}");
 
 
 //Test Case 3 
