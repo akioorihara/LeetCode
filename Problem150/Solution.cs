@@ -1,13 +1,19 @@
 ﻿using System;
 namespace Problem150
 {
+
+	/// <summary>
+	/// 
+	/// </summary>
 	public class Solution
 	{
+		/// <summary>
+		/// 
+		/// </summary>
 		public Solution()
 		{
 
 		}
-
 
 
 		/// <summary>
@@ -15,7 +21,7 @@ namespace Problem150
 		/// </summary>
 		/// <param name="num"></param>
 		/// <returns></returns>
-        public bool hasDuplicate(int[] num)
+        public bool HasDuplicate(int[] num)
         {
 			//TODO - Complete the function below 
             return true;
