@@ -32,6 +32,7 @@ namespace Problem150
 				if (xDict.ContainsKey(each))
 				{
 					xDict[each] += 1;
+					// I could return true already here 
                 }
 				else{
                     xDict.Add(each, 1);
