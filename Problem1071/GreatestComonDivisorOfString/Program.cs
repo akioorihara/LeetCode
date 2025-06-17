@@ -25,5 +25,17 @@ Output: ""
 
 
 
+using System.Dynamic;
+using System.IO.Compression;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
 string str1 = "ABCABC", str2 = "ABC";
 
+
+
+var x = new Solutions();
+
+x.GcdofString(str1, str2);
+
+Console.WriteLine(x.GcdofString(str1, str2));
