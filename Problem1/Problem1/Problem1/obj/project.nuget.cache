@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YrJCySkaTxaOUgY8w7iyEJR5/R1nivMdFfLvIRA5Y3Yq+IobmNllGg6rMAfsRZCD4jqK8MEMxihO0tziJmwbLQ==",
+  "dgSpecHash": "k+bV1w05NdY=",
   "success": true,
   "projectFilePath": "/Users/akioorihara/Library/CloudStorage/OneDrive-Personal/GitHub/LeetCode/Problem1/Problem1/Problem1/Problem1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/akioorihara/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/akioorihara/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/akioorihara/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
