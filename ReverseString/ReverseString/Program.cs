@@ -16,8 +16,9 @@ Output: ['h','a','n','n','a','H']
 
 var solution = new Solution();
 char[] str = new char[] {'H','a','n','n','a','h'};
-
+char[] str2 = new char[] { 'h', 'e', 'l', 'l', 'o' };
 solution.ReverseString(str);
+solution.ReverseString(str2);
 
 
 
@@ -27,25 +28,23 @@ public class Solution
     {
         Console.WriteLine(s);
         int lastIndex = s.Length - 1;
-        int firstIndex = 0;
-        foreach (char e in s)
+
+        for (int i = 0; i >= lastIndex; i++)
         {
             //swap 
-            if (lastIndex == firstIndex)
+            if (lastIndex == i)
             {
                 //cannot swap + dont do anything 
                 break;
             }
             else
             {
-
-                char tempChar = e;
-                s[firstIndex] = s[lastIndex];
-                s[lastIndex] = e;
+                char tempChar = s[i];
+                s[i] = s[lastIndex];
+                s[lastIndex] = tempChar;
             }
-            firstIndex++;
+            // firstIndex++;
             lastIndex--;
-
         }
 
         Console.WriteLine(s);
