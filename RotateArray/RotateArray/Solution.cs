@@ -19,6 +19,8 @@ public class Solution
             Console.WriteLine("The input K cannot be negative");
 
 
+        k = k % nums.Length;
+
         // rotate 
         int[] rotatedArray = new int[nums.Length];
 
@@ -31,6 +33,7 @@ public class Solution
         {
             if (i == nums.Length - 1)
             {
+                int newIndex = (i + k) % nums.Length;
                 rotatedArray[0] = nums[i];
             }
             else
