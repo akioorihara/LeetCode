@@ -16,5 +16,15 @@ Explanation:
 rotate 1 steps to the right: [99,-1,-100,3]
 rotate 2 steps to the right: [3,99,-1,-100]
 
-*/ 
+*/
 
+var solution = new Solution();
+
+// Test case 1 
+int[] nums = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+solution.Rotate(nums, 3);
+
+
+// test case 2 
+nums = new int[] { -1, -100, 3, 99 };
+solution.Rotate(nums, 2);
