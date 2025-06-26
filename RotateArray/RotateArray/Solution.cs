@@ -12,14 +12,14 @@ public class Solution
     /// <param name="k"></param>
     public void Rotate(int[] nums, int k)
     {
-        
+
         Console.WriteLine("Input  Array: " + string.Join(",", nums));
         // error out if the input k is smaller than 0
         if (k <= 0)
             Console.WriteLine("The input K cannot be negative");
 
 
-        k = k % nums.Length;
+        k = k % nums.Length; // normalize the itration 
 
         // rotate 
         int[] rotatedArray = new int[nums.Length];
@@ -31,21 +31,19 @@ public class Solution
 
         for (int i = 0; i < nums.Length; i++)
         {
-            if (i == nums.Length - 1)
-            {
-                int newIndex = (i + k) % nums.Length;
-                rotatedArray[0] = nums[i];
-            }
-            else
-            {
-                rotatedArray[i + 1] = nums[i];
-            }
-
-
+            int newIndex = (i + k) % nums.Length;
+            rotatedArray[newIndex] = nums[i];
         }
 
-        Console.WriteLine("Output Array: " + string.Join(",",rotatedArray));
+        for (int i = 0; i < nums.Length; i++)
+        {
+            nums[i] = rotatedArray[i];
+        }
 
+
+        Console.WriteLine("Rotated Array: " + string.Join(",", rotatedArray));
+
+        Console.WriteLine("Nums Array:    " + string.Join(",", nums));
 
     }
 }
