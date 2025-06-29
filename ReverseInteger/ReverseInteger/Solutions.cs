@@ -1,3 +1,5 @@
+using System.Net.Mail;
+using System.Reflection.Metadata;
 using System.Text;
 
 public class Solutions
@@ -5,45 +7,24 @@ public class Solutions
     public int Reverse(int x)
     {
 
-        //
-        var nums = x.ToString();
-        int size = nums.Length;
-        int[] ints = new int[size];
-        List<string> strings = new List<string>();
+        bool isNegative = x < 0;
+        string str = Math.Abs((long)x).ToString();
 
-        //Keep track of negative values 
-        bool isNegative = false;
-        if (x < 0)
+        string reversedStr = new string(str.Reverse().ToArray());
+
+        if (long.TryParse(reversedStr, out long reversed))
         {
-            isNegative = true;
+            if (reversed > int.MaxValue)
+                return 0;
+            return isNegative ? (int)-reversed : (int)reversed;
+
+            // return isNegative ? -reversed : reversed;
+        }
+        else
+        {
+            return 0;
         }
 
-        //Loop through to create reversed vals 
-        foreach (var each in nums.Reverse())
-        {
-            // Console.WriteLine(each);
-            strings.Add(each.ToString());
-        }
-
-        // Console.WriteLine(string.Join("," ,strings));
-        try
-        {
-            Int32.TryParse(strings.ToString(), out x);
-
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
-
-
-        if (isNegative)
-        {
-            //TODO - negate the value 
-        }
-
-
-        return 0;
     }
 
 }
