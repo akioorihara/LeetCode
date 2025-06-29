@@ -25,7 +25,11 @@ Assume the environment does not allow you to store 64-bit integers (signed or un
 // Output: 21
 
 
-Solutions solution = new Solutions();
-solution.Reverse(123);
-solution.Reverse(-123);
+// Solutions solution = new Solutions();
+// solution.Reverse(123);
+// solution.Reverse(-123);
 
+
+Reverse rev = new Reverse();
+rev.ReverseInteger(1234);
+rev.ReverseInteger(-12345);
