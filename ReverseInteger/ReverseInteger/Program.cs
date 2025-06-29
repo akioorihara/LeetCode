@@ -24,3 +24,8 @@ Assume the environment does not allow you to store 64-bit integers (signed or un
 // Input: x = 120
 // Output: 21
 
+
+Solutions solution = new Solutions();
+solution.Reverse(123);
+solution.Reverse(-123);
+
