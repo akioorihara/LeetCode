@@ -10,20 +10,23 @@ public class Solutions
         bool isNegative = x < 0;
         string str = Math.Abs((long)x).ToString();
 
-        string reversedStr = new string(str.Reverse().ToArray());
+        string rev = new string(str.Reverse().ToArray());
 
-        if (long.TryParse(reversedStr, out long reversed))
+        if (long.TryParse(rev, out long reversed))
         {
-            if (reversed > int.MaxValue)
-                return 0;
-            return isNegative ? (int)-reversed : (int)reversed;
+            if (isNegative)
+                reversed = -reversed;
 
-            // return isNegative ? -reversed : reversed;
+            if (reversed < int.MinValue || reversed > int.MaxValue)
+                return 0;
+
+            return (int)reversed;
         }
         else
         {
             return 0;
         }
+
 
     }
 
