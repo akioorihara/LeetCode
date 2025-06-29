@@ -32,6 +32,6 @@ Explanation: There is no way to make a positive profit, so we never buy the stoc
 */
 
 Solutions solution = new Solutions();
-solution.MaxProfix(new int[] { 7, 1, 5, 3, 6, 4 });
-solution.MaxProfix(new int[] {1, 2, 3, 4, 5 });
-solution.MaxProfix(new int[] { 7, 6, 4, 3, 1 });
+Console.WriteLine(solution.MaxProfix(new int[] { 7, 1, 5, 3, 6, 4 }));
+Console.WriteLine(solution.MaxProfix(new int[] {1, 2, 3, 4, 5 }));
+Console.WriteLine(solution.MaxProfix(new int[] { 7, 6, 4, 3, 1 }));
