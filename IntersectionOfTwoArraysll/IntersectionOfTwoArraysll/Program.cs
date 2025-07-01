@@ -20,5 +20,6 @@ Explanation: [9,4] is also accepted.
 
 
 Solutions solution = new Solutions();
-Console.WriteLine(solution.Intersect(new int[] { 1, 2, 2, 1 }, new int[] { 2, 2 }));
-Console.WriteLine(solution.Intersect(new int[] { 4, 8, 5 }, new int[] { 9, 4, 9, 8, 4 }));
+Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 1, 2, 2, 1 }, new int[] { 2 })));
+Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 4, 9, 5 }, new int[] { 9, 4, 9, 8, 4 })));
+
