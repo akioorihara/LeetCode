@@ -10,24 +10,29 @@ public class Solutions
     public int[] Intersect(int[] nums1, int[] nums2)
     {
 
-        
-    List<int> result = new List<int>();
-    bool[] used = new bool[nums2.Length];
+        int size = nums1.Length <= nums2.Length ? nums1.Length : nums2.Length;
+        // int[] matched = new int[size];
+        List<int> mt = new List<int>();
+        // TODO - Need to add a tracker to see if it is used or not 
 
-    for (int i = 0; i < nums1.Length; i++)
-    {
-        for (int j = 0; j < nums2.Length; j++)
+        int counter = 0;
+        for (int i = 0; i < nums1.Length; i++)
         {
-            if (!used[j] && nums1[i] == nums2[j])
+            for (int j = 0; j < nums2.Length; j++)
             {
-                result.Add(nums1[i]);
-                used[j] = true;  // mark as used
-                break;
+
+                if (nums1[i] == nums2[j])
+                {
+                    // matched[counter] = nums1[i];
+                    mt.Add(nums1[i]);
+                    counter++;
+                    break; 
+                }
             }
         }
-    }
 
-    return result.ToArray();
+        return mt.ToArray();
+    }
 
 
 
