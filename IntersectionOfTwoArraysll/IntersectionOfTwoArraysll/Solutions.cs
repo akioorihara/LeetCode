@@ -1,3 +1,4 @@
+using System.Data;
 using System.Diagnostics.Contracts;
 
 public class Solutions
@@ -11,24 +12,25 @@ public class Solutions
     /// <returns></returns>
     public int[] Intersect(int[] nums1, int[] nums2)
     {
-  
-            List<int> result = new List<int>();
-            bool[] used = new bool[nums2.Length];  // tracker for nums2
 
-            for (int i = 0; i < nums1.Length; i++)
+        //Ensure the bigger array comes first 
+        if (nums1.Length < nums2.Length)
+        {
+            Intersect(nums2, nums1);
+        }
+
+        Dictionary<int, int> count = new Dictionary<int, int>();
+
+        foreach (var num in nums1)
+        {
+            if (count.ContainsKey(num))
             {
-                for (int j = 0; j < nums2.Length; j++)
-                {
-                    if (nums1[i] == nums2[j] && !used[j])
-                    {
-                        result.Add(nums1[i]);
-                        used[j] = true;  // mark as used
-                        break;
-                    }
-                }
+                
             }
+        }
 
-            return result.ToArray();
+
+        return new int[] { 0, 0 };
 
     }
 
