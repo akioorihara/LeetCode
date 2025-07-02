@@ -15,11 +15,14 @@ Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
 Output: [4,9]
 Explanation: [9,4] is also accepted.
 
+Example 3: 
+Input num1: [1,2,2,1], num2 = [2]
+Output: [2]
 
 */
 
 
 Solutions solution = new Solutions();
-Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 1, 2, 2, 1 }, new int[] { 2 })));
-Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 4, 9, 5 }, new int[] { 9, 4, 9, 8, 4 })));
-
+Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 1, 2, 2, 1 }, new int[] { 2,2 })));
+// Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 4, 9, 5 }, new int[] { 9, 4, 9, 8, 4 })));
+Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 1,2,2,1 }, new int[] { 2 })));
