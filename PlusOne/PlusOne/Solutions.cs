@@ -22,9 +22,13 @@ public class Solutions
         }
 
         //increment 9(s) 
-        for (int i = digits.Length - 1; i > 0; i--)
+        for (int i = digits.Length - 1; i >= 0; i--)
         {
 
+            if (digits[i] == 9)
+            {
+                
+            }
 
 
 
