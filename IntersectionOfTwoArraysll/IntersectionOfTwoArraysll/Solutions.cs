@@ -13,11 +13,8 @@ public class Solutions
     public int[] Intersect(int[] nums1, int[] nums2)
     {
 
-        //Ensure the bigger array comes first. If not, reorder the array  
         if (nums1.Length < nums2.Length)
-        {
             return Intersect(nums2, nums1);
-        }
 
         Dictionary<int, int> count = new Dictionary<int, int>();
 
@@ -31,7 +28,6 @@ public class Solutions
 
         List<int> result = new List<int>();
 
-        //find and calc 
         foreach (var num in nums2)
         {
             if (count.ContainsKey(num) && count[num] > 0)

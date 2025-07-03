@@ -24,5 +24,5 @@ Output: [2]
 
 Solutions solution = new Solutions();
 Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 1, 2, 2, 1 }, new int[] { 2,2 })));
-// Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 4, 9, 5 }, new int[] { 9, 4, 9, 8, 4 })));
+Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 4, 9, 5 , 6}, new int[] { 9, 4, 9, 8, 4, 6 })));
 Console.WriteLine(string.Join(",", solution.Intersect(new int[] { 1,2,2,1 }, new int[] { 2 })));
