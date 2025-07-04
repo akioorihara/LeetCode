@@ -36,7 +36,7 @@ Solutions solution = new Solutions();
 Console.WriteLine(string.Join("",solution.PlusOne(new int[] { 1, 2, 3 })));
 Console.WriteLine(string.Join("",solution.PlusOne(new int[] { 4,3,2,1})));
 Console.WriteLine(string.Join("",solution.PlusOne(new int[] { 9})));
-Console.WriteLine(string.Join("", solution.PlusOne(new int[] { 1, 9,9 })));
+Console.WriteLine(string.Join("",solution.PlusOne(new int[] { 1, 9,9 })));
 
 
 
