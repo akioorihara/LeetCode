@@ -12,6 +12,7 @@ public class Solution
         int pointer = 0;
         for (int i = 0; i < nums.Length; i++)
         {
+            
 
 
 
