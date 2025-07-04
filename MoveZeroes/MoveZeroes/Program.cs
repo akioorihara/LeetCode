@@ -16,8 +16,6 @@ Output: [0]
 
 */
 
-
-
 var solution = new Solution();
 
 solution.MoveZeroes(new int[] { 0, 1, 0, 3, 12 });
