@@ -27,6 +27,6 @@ public class Solutions
         dict.Where(x => x.Value == 1);
 
 
-        return 1;
+        return -1;
     }
 }

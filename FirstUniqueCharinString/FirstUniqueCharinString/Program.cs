@@ -26,5 +26,5 @@ Output: -1
 Solutions solution = new Solutions();
 
 Console.WriteLine(solution.FirstUniqChar("leetcode"));
-// Console.WriteLine(solution.FirstUniqChar("loveleetcode"));
-// Console.WriteLine(solution.FirstUniqChar("aabb"));
+Console.WriteLine(solution.FirstUniqChar("loveleetcode"));
+Console.WriteLine(solution.FirstUniqChar("aabb"));
