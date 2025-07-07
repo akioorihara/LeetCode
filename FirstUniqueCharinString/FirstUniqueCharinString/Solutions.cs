@@ -12,9 +12,8 @@ public class Solutions
     public int FirstUniqChar(string s)
     {
         Dictionary<char, int> countUniqueChars = new Dictionary<char, int>();
-        Dictionary<char, int> countIndices = new Dictionary<char, int>();
+        // Dictionary<char, int> countIndices = new Dictionary<char, int>();
 
-        int index = 0;
         for (int i = 0; i < s.Length; i++)
         {
             if (countUniqueChars.ContainsKey(s[i]))
@@ -24,26 +23,17 @@ public class Solutions
             else
             {
                 countUniqueChars[s[i]] = 1;
-                countIndices[s[i]] = index;
             }
-            index++;
 
         }
 
-        int smallestIndex = Int32.MaxValue;
-        int smallestCandidate = 0;
-        // int uniqueSmallestCharIndex = -1;
-        foreach (var each in countUniqueChars)
+        for (int i = 0; i < s.Length; i++)
         {
-            if (countIndices.ContainsKey(each.Key) && each.Value == 1)
-            {
-                smallestCandidate = countIndices[each.Key];
-            }
-
-            if (smallestCandidate < smallestIndex)
-                smallestIndex = smallestCandidate;
+            if (countUniqueChars[s[i]] == 1)
+                return i;
         }
 
-        return smallestIndex > 0 ? -1 : smallestIndex;
+        return -1;
+
     }
 }
