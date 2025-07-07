@@ -11,29 +11,22 @@ public class Solutions
     /// <returns></returns>
     public int FirstUniqChar(string s)
     {
-        Dictionary<char, int> countUniqueChars = new Dictionary<char, int>();
-        // Dictionary<char, int> countIndices = new Dictionary<char, int>();
+        Dictionary<char, int> dict = new Dictionary<char, int>();
 
         for (int i = 0; i < s.Length; i++)
         {
-            if (countUniqueChars.ContainsKey(s[i]))
-            {
-                countUniqueChars[s[i]]++;
-            }
+            if (dict.ContainsKey(s[i]))
+                dict[s[i]]++;
             else
-            {
-                countUniqueChars[s[i]] = 1;
-            }
-
+                dict[s[i]] = 1;
         }
 
         for (int i = 0; i < s.Length; i++)
         {
-            if (countUniqueChars[s[i]] == 1)
+            if (dict[s[i]] == 1)
                 return i;
         }
 
         return -1;
-
     }
 }
