@@ -10,7 +10,7 @@ public class Solutions
     {
         Dictionary<char, int> dict = new Dictionary<char, int>();
 
-        int counter = 0;
+        int firstIndex = 0;
         foreach (var c in s)
         {
             if (dict.ContainsKey(c))
@@ -20,11 +20,22 @@ public class Solutions
             else
             {
                 dict[c] = 1;
+                firstIndex++;
             }
 
         }
 
         dict.Where(x => x.Value == 1);
+
+
+        foreach (var kvp in dict)
+        {
+            if (kvp.Value == 1)
+            {
+                return firstIndex;
+
+            }
+        }
 
 
         return -1;
