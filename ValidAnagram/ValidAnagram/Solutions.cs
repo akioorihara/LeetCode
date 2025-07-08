@@ -8,57 +8,22 @@ public class Solutions
     /// <returns></returns>
     public bool IsAnagram(string s, string t)
     {
-        //check the length 
         if (s.Length != t.Length)
-        {
             return false;
+
+        Dictionary<char, int> count = new Dictionary<char, int>();
+
+        for (int i = 0; i < s.Length; i++) {
+            if (!count.ContainsKey(s[i])) count[s[i]] = 0;
+            if (!count.ContainsKey(t[i])) count[t[i]] = 0;
+
+            count[s[i]]++;
+            count[t[i]]--;
         }
 
-        //
-        Dictionary<char, int> s_dict = new Dictionary<char, int>();
-        Dictionary<char, int> t_dict = new Dictionary<char, int>();
-
-        for (int i = 0; i < s.Length; i++)
-        {
-            //the string s 
-            if (s_dict.ContainsKey(s[i]))
-            {
-                s_dict[s[i]]++;
-            }
-            else
-            {
-                s_dict[s[i]] = 1;
-            }
-
-            //string t 
-            if (t_dict.ContainsKey(t[i]))
-            {
-                t_dict[t[i]]++;
-            }
-            else
-            {
-                t_dict[t[i]] = 1;
-            }
-        }
-
-
-        //check 
-        foreach (var kvp in s_dict)
-        {
-            char key = kvp.Key;
-            int s_val = kvp.Value;
-
-            int t_val = -1;
-
-            if (t_dict.ContainsKey(key))
-            {
-                t_val = t_dict[key];
-            }
-
-            if (t_val != s_val || t_val == -1)
-            {
+        foreach (var kvp in count) {
+            if (kvp.Value != 0)
                 return false;
-            }
         }
 
         return true;
