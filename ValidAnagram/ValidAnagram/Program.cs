@@ -1,6 +1,7 @@
 ﻿/*
 
-Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+Given two strings s and t, 
+return true if t is an anagram of s, and false otherwise.
 
  
 
@@ -28,5 +29,6 @@ s and t consist of lowercase English letters.
 
 Solutions solution = new Solutions();
 
-Console.WriteLine(solution.IsAnagram("anagram", "nagaram"));
+// Console.WriteLine(solution.IsAnagram("anagram", "nagaram"));
 Console.WriteLine(solution.IsAnagram("rat", "car"));
+Console.WriteLine(solution.IsAnagram("rac", "car"));
