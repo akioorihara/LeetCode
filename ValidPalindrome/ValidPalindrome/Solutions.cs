@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 public class Solutions
 {
 
@@ -9,6 +11,20 @@ public class Solutions
     /// <returns></returns>
     public bool IsPalindrome(string s)
     {
+        //Remove non-alphanumeric charactors 
+        // s = s.Trim();
+        string cleaned = Regex.Replace(s, "[^a-zA-Z0-9]", "").ToLower();
+
+        if (string.IsNullOrEmpty(cleaned))
+        {
+            return false;
+        }
+
+
+
+
+
+
         
 
 
