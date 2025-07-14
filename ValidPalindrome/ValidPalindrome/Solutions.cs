@@ -20,7 +20,11 @@ public class Solutions
             return false;
         }
 
+        Dictionary<char, int> dict = new Dictionary<char, int>();
         int size = s.Length;
+
+        var arr = s.ToList();
+
         if (size % 2 == 0)
         {
             //TODO - check if we have the same amount 
@@ -33,14 +37,16 @@ public class Solutions
 
             //Remove the middle index char or create a new memory to recreate without the middle value so that we can loop 
             // s[middleIndex] = "";
+            char middleChar = s[middleIndex];
+            arr.RemoveAt(middleIndex);
+
 
         }
 
 
-        Dictionary<char, int> dict = new Dictionary<char, int>();
 
         //The first half should be added and then second half should be removed or substracted 
-        foreach (var each in s)
+        foreach (var each in arr)
         {
             if (dict.ContainsKey(each))
             {
