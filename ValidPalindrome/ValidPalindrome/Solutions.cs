@@ -23,6 +23,7 @@ public class Solutions
         int size = s.Length;
         if (size % 2 == 0)
         {
+            //TODO - check if we have the same amount 
 
         }
         else
