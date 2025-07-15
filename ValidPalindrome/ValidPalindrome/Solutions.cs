@@ -18,11 +18,11 @@ public class Solutions
 
         if (string.IsNullOrEmpty(cleaned))
         {
-            return false;
+            return true;
         }
 
         // check the left and right 
-        int left = 0, right = s.Length - 1;
+        int left = 0, right = cleaned.Length - 1;
 
         while (left < right)
         {
