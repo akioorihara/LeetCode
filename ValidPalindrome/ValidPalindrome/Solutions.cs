@@ -37,4 +37,17 @@ public class Solutions
         return true;
     } 
 
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsPalindromed (string s)
+    {
+        
+
+
+
+        return false;
+    }
+
+
 }
