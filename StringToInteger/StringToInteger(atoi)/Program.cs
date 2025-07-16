@@ -50,5 +50,5 @@ Solutions solutions = new Solutions();
 
 
 Console.WriteLine(solutions.MyAtoi("42"));
-Console.WriteLine(solutions.MyAtoi(" -042"));
-Console.WriteLine(solutions.MyAtoi("1337c0d3"));
+// Console.WriteLine(solutions.MyAtoi(" -042"));
+// Console.WriteLine(solutions.MyAtoi("1337c0d3"));
