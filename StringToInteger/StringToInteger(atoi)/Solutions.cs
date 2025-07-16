@@ -38,7 +38,8 @@ public class Solutions
         var x = ints.ToString();
         Int32.TryParse(x, out int final);
 
-        return final;
+        //if contains a negative value, returns a negative 
+        return s.Contains('-') ? -1 : 0;
 
     }
 
