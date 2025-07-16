@@ -42,11 +42,33 @@ public class Solutions
     /// </summary>
     public bool IsPalindromed (string s)
     {
-        
+        //do some regex to remove non-alphanumeric chars 
+        var claened = Regex.Replace(s, "[^a-zA-Z0-9]", "").ToLower();
 
+        if (String.IsNullOrEmpty(claened))
+        {
+            return true;
+        }
 
+        int left = 0, right = claened.Length - 1;
 
-        return false;
+        for (int i = 0; i < claened.Length; i++)
+        {
+            if (left < right)
+            {
+                //check if both chars match and if not, returns false
+                if (claened[left] != claened[right])
+                {
+                    return false;
+                }
+
+            }
+
+            left++;
+            right--;
+        }
+
+        return true;
     }
 
 

@@ -25,8 +25,8 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
 Solutions solutions = new Solutions();
 
-Console.WriteLine(solutions.IsPalindrome("A man, a plan, a canal: Panama"));
-Console.WriteLine(solutions.IsPalindrome("race a car "));
-Console.WriteLine(solutions.IsPalindrome(" "));
-Console.WriteLine(solutions.IsPalindrome("dad"));
+// Console.WriteLine(solutions.IsPalindromed("A man, a plan, a canal: Panama"));
+Console.WriteLine(solutions.IsPalindromed("race a car "));
+// Console.WriteLine(solutions.IsPalindromed(" "));
+// Console.WriteLine(solutions.IsPalindromed("dad"));
 
