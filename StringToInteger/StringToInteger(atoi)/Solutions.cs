@@ -12,34 +12,36 @@ public class Solutions
     /// <returns></returns>
     public int MyAtoi(string s)
     {
-        List<int> ints = new List<int>();
+        
+        if (string.IsNullOrEmpty(s)) return 0;
 
-        foreach (var e in s)
-        {
-            try
-            {
-                if (Int32.TryParse(e.ToString(), out int result))
-                {
-                    ints.Add(result);
-                }
+        int i = 0;
+        int n = s.Length;
+        // Skip leading whitespaces
+        while (i < n && s[i] == ' ') i++;
 
-                //fails - skip and 
+        // Check if we've reached the end
+        if (i == n) return 0;
 
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-
-
+        // Check sign
+        int sign = 1;
+        if (s[i] == '+' || s[i] == '-') {
+            sign = (s[i] == '-') ? -1 : 1;
+            i++;
         }
 
-        var x = ints.ToString();
-        Int32.TryParse(x, out int final);
+        long result = 0;
+        while (i < n && char.IsDigit(s[i])) {
+            result = result * 10 + (s[i] - '0');
 
-        //if contains a negative value, returns a negative 
-        return s.Contains('-') ? -1 : 0;
+            // Clamp to 32-bit range
+            if (sign * result <= int.MinValue) return int.MinValue;
+            if (sign * result >= int.MaxValue) return int.MaxValue;
+
+            i++;
+        }
+
+        return (int)(sign * result);        
 
     }
 
