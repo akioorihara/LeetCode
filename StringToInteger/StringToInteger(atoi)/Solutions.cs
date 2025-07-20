@@ -32,6 +32,8 @@ public class Solutions
 
         long result = 0;
         while (i < n && char.IsDigit(s[i])) {
+
+            // Common and clever way trick to convert digit character like '2' into its corresponding integer value 2. 
             result = result * 10 + (s[i] - '0');
 
             // Clamp to 32-bit range
