@@ -16,7 +16,14 @@ public class Solutions
         if (!haystack.Contains(needle))
             return -1;
 
-        // int counter = 0;
+        int counter = 0;
+
+        // Loop thorugh to check 
+        foreach (var each in haystack)
+        {
+            // do the logic 
+
+        }
 
 
         return 0;
