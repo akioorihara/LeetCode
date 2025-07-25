@@ -12,6 +12,11 @@ public class Solutions
     public int StrStr(string haystack, string needle)
     {
 
+        //check if haystack contains needle 
+        if (!haystack.Contains(needle))
+            return -1;
+
+        // int counter = 0;
 
 
         return 0;
