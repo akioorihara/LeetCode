@@ -1,3 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*
+ * 
+ * This is a practice to use Interface and Polymorphism  
+ * This practice comes from Udemy - Code with Mosh 
+ * 
+ */
+
+using InterfacesAndPolymorphism;
+
+var encode = new VideoEncode();
+encode.Encode(new Video());
 
