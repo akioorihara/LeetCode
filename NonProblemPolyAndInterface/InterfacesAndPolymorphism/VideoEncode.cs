@@ -5,12 +5,13 @@ namespace InterfacesAndPolymorphism
 	{
 		//private readonly MailService _mailService;
 
-		private readonly IList<INotification> notifications;
+		private readonly IList<INotification> _notifications;
 
 
 		public VideoEncode()
 		{
 			//_mailService = new MailService();
+			_notifications
 		}
 
 		public void Encode(Video video)
