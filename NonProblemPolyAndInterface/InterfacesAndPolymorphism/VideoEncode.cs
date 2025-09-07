@@ -3,15 +3,18 @@ namespace InterfacesAndPolymorphism
 {
 	public class VideoEncode
 	{
-		//private readonly MailService _mailService;
+        //private readonly MailService _mailService;
 
-		private readonly IList<INotification> _notifications;
+        //This has to be IList as interface and not List as
+        //List would be hard wire and cannot be hard coded as
+        // _notifications = new List<INotification>();
+        private readonly IList<INotification> _notifications;
 
 
 		public VideoEncode()
 		{
 			//_mailService = new MailService();
-			_notifications
+			_notifications = new List<INotification>();
 		}
 
 		public void Encode(Video video)
