@@ -8,5 +8,9 @@
 using InterfacesAndPolymorphism;
 
 var encode = new VideoEncode();
+
+encode.Register(new MailNotification());
+encode.Register(new TextNotification());
+
 encode.Encode(new Video());
 

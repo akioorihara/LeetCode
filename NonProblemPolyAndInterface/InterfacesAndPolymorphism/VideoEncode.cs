@@ -20,7 +20,17 @@ namespace InterfacesAndPolymorphism
 		public void Encode(Video video)
 		{
 			//_mailService.Send(new Mail());
+			foreach(var channel in _notifications)
+			{
+				channel.Send(new Message());
+			}
 		}
+
+		public void Register(INotification channel)
+		{
+			_notifications.Add(channel);
+		}
+
 	}
 }
 

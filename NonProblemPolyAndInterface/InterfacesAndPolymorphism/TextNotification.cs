@@ -1,7 +1,7 @@
 ﻿using System;
 namespace InterfacesAndPolymorphism
 {
-	public class TextNotification: INortification
+	public class TextNotification: INotification
 	{
 		public TextNotification()
 		{

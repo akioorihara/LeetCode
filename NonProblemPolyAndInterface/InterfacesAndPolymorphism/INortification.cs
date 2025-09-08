@@ -1,7 +1,7 @@
 ﻿using System;
 namespace InterfacesAndPolymorphism
 {
-	public interface INortification
+	public interface INotification
 	{
 		void Send(Message message);
 	}
