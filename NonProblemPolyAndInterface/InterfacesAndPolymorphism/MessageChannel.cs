@@ -6,6 +6,11 @@ namespace InterfacesAndPolymorphism
 		public MessageChannel()
 		{
 		}
+
+		public void Send(Mail mail)
+		{
+
+		}
 	}
 }
 

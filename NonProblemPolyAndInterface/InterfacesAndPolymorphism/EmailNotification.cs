@@ -1,16 +1,16 @@
 ﻿using System;
 namespace InterfacesAndPolymorphism
 {
-    public class MailNotification : INotification
+    public class EmailNotification : INotification
 	{
-		public MailNotification()
+		public EmailNotification()
 		{
-        }
+		}
 
         public void Send(Message message)
         {
+            Console.WriteLine("Sending email notifications....");
             //throw new NotImplementedException();
-            Console.WriteLine("Sending mails....");
         }
     }
 }

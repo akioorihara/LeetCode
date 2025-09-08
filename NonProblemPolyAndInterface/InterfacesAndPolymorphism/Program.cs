@@ -11,6 +11,7 @@ var encode = new VideoEncode();
 
 encode.Register(new MailNotification());
 encode.Register(new TextNotification());
+encode.Register(new EmailNotification());
 
 encode.Encode(new Video());
 
