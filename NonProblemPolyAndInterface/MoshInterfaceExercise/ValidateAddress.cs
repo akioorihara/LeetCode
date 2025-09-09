@@ -1,11 +1,21 @@
 ﻿using System;
 namespace MoshInterfaceExercise
 {
-	public class ValidateAddress
+	public class ValidateAddress : IWorkflow
 	{
 		public ValidateAddress()
 		{
 		}
-	}
+
+        /// <summary>
+        /// Execute and validating the data 
+        /// </summary>
+        /// <exception cref="NotImplementedException"></exception>
+        public void Execute()
+        {
+            Console.WriteLine("Validing the data.....");
+            //throw new NotImplementedException();
+        }
+    }
 }
 

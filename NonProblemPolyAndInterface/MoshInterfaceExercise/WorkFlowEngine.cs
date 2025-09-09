@@ -10,9 +10,11 @@ namespace MoshInterfaceExercise
 		/// Constractor taking a list of workflow interfaces 
 		/// </summary>
 		/// <param name="workflows">A list of workflow interfaces</param>
-		public WorkFlowEngine(List<IWorkflow> workflows)
-		{
-			_workflows = workflows;
+		//public WorkFlowEngine(List<IWorkflow> workflows)
+
+        public WorkFlowEngine()
+        {
+			_workflows = new List<IWorkflow>();
 		}
 
 
