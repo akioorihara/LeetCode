@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoshInterfaceExercise", "MoshInterfaceExercise.csproj", "{92D51F97-7C88-4544-B40F-C58682A694F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92D51F97-7C88-4544-B40F-C58682A694F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D51F97-7C88-4544-B40F-C58682A694F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D51F97-7C88-4544-B40F-C58682A694F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D51F97-7C88-4544-B40F-C58682A694F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {925CEED7-23AF-44A8-9E35-2FD52CB3BCEC}
+	EndGlobalSection
+EndGlobal
