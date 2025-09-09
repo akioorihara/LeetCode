@@ -3,8 +3,14 @@ namespace MoshInterfaceExercise
 {
 	public class EmailNotifications : IWorkflow
 	{
-		public EmailNotifications()
+		private readonly string _sendTo;
+		private readonly string _title;
+
+
+		public EmailNotifications(Email email)
 		{
+			//_sendTo = email.;
+			//_title = email;
 		}
 
 		/// <summary>
@@ -12,7 +18,8 @@ namespace MoshInterfaceExercise
 		/// </summary>
 		public void Execute()
 		{
-			Console.WriteLine("Sending an email notification....");
+			Console.WriteLine($"Sending an email notification " +
+				$"to {_sendTo} and the subject of {_title}....");
 
 		}
 	}
