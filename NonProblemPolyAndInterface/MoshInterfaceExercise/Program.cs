@@ -1,3 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*
+ * Excercise: Design a workflow engine
+ * 
+ * This is the exercise provided by Mosh - Intermediate learning exercise from Mosh
+ * This exercise is about learning how to use interface in C# 
+ * 
+ */
+
+
+
 
