@@ -12,6 +12,9 @@ var workflowEngine = new WorkFlowEngine();
 
 
 //register some workflows
+
+//workflowEngine.Register(new UploadVideo());
+
 workflowEngine.Register(new EmailNotifications(new Email("test@test.com", "test subject")));
 workflowEngine.Register(new TextNotifications());
 workflowEngine.Register(new ValidateAddress());

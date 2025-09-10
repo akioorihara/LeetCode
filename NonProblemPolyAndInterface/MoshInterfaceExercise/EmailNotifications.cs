@@ -9,8 +9,8 @@ namespace MoshInterfaceExercise
 
 		public EmailNotifications(Email email)
 		{
-			//_sendTo = email.;
-			//_title = email;
+			_sendTo = email.SendToAddress;
+			_title = email.Title;
 		}
 
 		/// <summary>

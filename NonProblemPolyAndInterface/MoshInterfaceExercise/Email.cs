@@ -3,16 +3,16 @@ namespace MoshInterfaceExercise
 {
 	public class Email
 	{
-		private string _sendToAddress;
-		private string _title; 
+		//private string _sendToAddress;
+		//private string _title;
 
-		//public string SendToAddress { get; set; }
-		//public string Title { get; set; }
+		public string SendToAddress { get; set; }
+		public string Title { get; set; }
 
-		public Email(string SendTo, string Title)
+		public Email(string sendTo, string title)
 		{
-			_sendToAddress = SendTo;
-			_title = Title;
+            SendToAddress = sendTo;
+            Title = title;
 		}
 
 	}
