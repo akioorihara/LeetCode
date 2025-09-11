@@ -3,7 +3,7 @@ namespace MoshInterfaceExercise
 {
 	public interface IUpload
 	{
-		void Upload(string path);
+		void Upload();
 	}
 }
 

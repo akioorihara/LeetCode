@@ -13,9 +13,14 @@ var workflowEngine = new WorkFlowEngine();
 
 //register some workflows
 
-//workflowEngine.Register(new UploadVideo());
+// 1. Upload a video to a cloud storage.
+workflowEngine.Register(new UploadVideo("C:\\current\\directory"));
 
 workflowEngine.Register(new EmailNotifications(new Email("test@test.com", "test subject")));
+
+// 2. Call a web service provided by a
+//third-party video encoding service to tell them you have a
+//video ready for encoding.
 workflowEngine.Register(new TextNotifications());
 workflowEngine.Register(new ValidateAddress());
 
