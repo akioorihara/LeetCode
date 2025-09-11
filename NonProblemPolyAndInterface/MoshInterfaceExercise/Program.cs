@@ -21,8 +21,12 @@ workflowEngine.Register(new EmailNotifications(new Email("test@test.com", "test 
 // 2. Call a web service provided by a
 //third-party video encoding service to tell them you have a
 //video ready for encoding.
+workflowEngine.Register(new CallWebService());
+
+
+//3- Send an email to the owner of the video notifying them that the video started processing.
 workflowEngine.Register(new TextNotifications());
-workflowEngine.Register(new ValidateAddress());
+//workflowEngine.Register(new ValidateAddress());
 
 
 // To run and execute all register job(s) 
