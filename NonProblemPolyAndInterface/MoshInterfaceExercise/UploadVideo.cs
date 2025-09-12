@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MoshInterfaceExercise
 {
-	public class UploadVideo : IUpload, IWorkflow
+	public class UploadVideo : IUpload, ITask
 	{
         //public string Path;
         private string _path;

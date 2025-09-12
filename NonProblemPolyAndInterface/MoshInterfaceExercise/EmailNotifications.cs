@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MoshInterfaceExercise
 {
-	public class EmailNotifications : IWorkflow
+	public class EmailNotifications : ITask
 	{
 		private readonly string _sendTo;
 		private readonly string _title;

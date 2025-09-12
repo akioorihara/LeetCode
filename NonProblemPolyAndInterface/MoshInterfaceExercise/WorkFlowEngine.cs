@@ -3,40 +3,27 @@ namespace MoshInterfaceExercise
 {
 	public class WorkFlowEngine
 	{
-		//private readonly IWorkflow _workflow;
-		private readonly IList<IWorkflow> _workflows;
-
-		/// <summary>
-		/// Constractor taking a list of workflow interfaces 
-		/// </summary>
-		/// <param name="workflows">A list of workflow interfaces</param>
-		//public WorkFlowEngine(List<IWorkflow> workflows)
-
-        public WorkFlowEngine()
-        {
-			_workflows = new List<IWorkflow>();
-		}
-
-
         /// <summary>
         /// Process and execute all workflow(s)
         /// </summary>
-        public void Run()
+        public void Run(IWorkflow workflows)
 		{
-			foreach(var workflow in _workflows)
+			foreach(ITask item in workflows.GetTasks())
 			{
-				//execute each worklow
-				workflow.Execute();
+				try
+				{
+                    //execute each worklow
+                    item.Execute();
+                }
+				catch(Exception ex)
+				{
+					Console.WriteLine(ex.Message);
+					throw;
+				} 
+				
 			}
 		}
 
-		/// <summary>
-		/// Register workflow(s) to the list 
-		/// </summary>
-		public void Register(IWorkflow workflow)
-		{
-			_workflows.Add(workflow);
-		}
 		
 	}
 }

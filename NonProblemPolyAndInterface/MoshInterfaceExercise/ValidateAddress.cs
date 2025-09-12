@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MoshInterfaceExercise
 {
-	public class ValidateAddress : IWorkflow
+	public class ValidateAddress : ITask
 	{
 		public ValidateAddress()
 		{

@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MoshInterfaceExercise
 {
-	public class TextNotifications : IWorkflow
+	public class TextNotifications : ITask
 	{
 		public TextNotifications()
 		{

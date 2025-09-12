@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MoshInterfaceExercise
 {
-	public class CallWebService : IWorkflow
+	public class CallWebService : ITask
 	{
 		public CallWebService()
 		{

@@ -1,12 +1,12 @@
 ﻿using System;
 namespace MoshInterfaceExercise
 {
-	/// <summary>
-	/// this is the interface for workflow 
-	/// </summary>
 	public interface IWorkflow
 	{
-		void Execute();
-	}
+		void Add(ITask task);
+		void Remove(ITask task);
+		IEnumerable<ITask> GetTasks();
+
+    }
 }
 
