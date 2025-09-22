@@ -16,19 +16,30 @@ public class Solutions
         if (!haystack.Contains(needle))
             return -1;
 
-        int counter = 0;
+        int isMatched = 0;
+        int firstMatchedValue = 0;
+        //bool isFirstValueMatched = false;
 
-        // Loop thorugh to check 
-        foreach (var each in haystack)
+        // nested loop thorugh to check and return the index
+        // e.g. -- haystack = "sadbutsad", needle = "sad"
+        for (int i = 0; i < haystack.Length; i++)
         {
-            // do the logic here
+            for(int j = 0; j < haystack.Length; j++)
+            {
+                if (haystack[i] == needle[j])
+                {
+                    isMatched++;
+                    continue; 
+                }
 
 
+            }
+        }
+        if(isMatched == needle.Length)
+        {
+            return firstMatchedValue;
         }
 
-
-        return 0;
+        return -1;
     }
-
-
 }
