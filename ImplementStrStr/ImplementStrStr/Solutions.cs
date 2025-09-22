@@ -21,7 +21,8 @@ public class Solutions
         // Loop thorugh to check 
         foreach (var each in haystack)
         {
-            // do the logic here 
+            // do the logic here
+
 
         }
 
