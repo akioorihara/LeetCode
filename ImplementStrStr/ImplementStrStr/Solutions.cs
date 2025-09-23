@@ -11,10 +11,10 @@ public class Solutions
     /// <returns></returns>
     public int StrStr(string haystack, string needle)
     {
-
-        //check if haystack contains needle 
-        //if (!haystack.Contains(needle))
-        //    return -1;
+        if (string.IsNullOrEmpty(needle))
+        {
+            return 0;
+        }
 
         int hayStackLength = haystack.Length;
         int needleLength = needle.Length;
@@ -25,18 +25,14 @@ public class Solutions
             return -1;
         }
 
-
-        //int isMatched = 0;
-        //int firstMatchedValue = 0;
-        //bool isFirstValueMatched = false;
-
-
-
         // nested loop thorugh to check and return the index
         // e.g. -- haystack = "sadbutsad", needle = "sad"
-        for(int i = 0; i < hayStackLength - needleLength; i++)
+        for(int i = 0; i <= hayStackLength - needleLength; i++)
         {
-
+            if (haystack.Substring(i, needleLength) == needle)
+            {
+                return i;
+            }
         }
 
         return -1;

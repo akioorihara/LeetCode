@@ -21,4 +21,5 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 Solutions solution = new Solutions();
 
 Console.WriteLine(solution.StrStr("sadbutsad", "sad"));
+Console.WriteLine(solution.StrStr("sasdbutsad", "sad"));
 Console.WriteLine(solution.StrStr("leetcode", "leeto"));
