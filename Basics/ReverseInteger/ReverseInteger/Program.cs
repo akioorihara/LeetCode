@@ -32,8 +32,8 @@ Output: 21
 using ReverseInteger;
 var solution = new Solutions();
 
-Console.WriteLine(solution.Reverse(1));
-Console.WriteLine(solution.Reverse(-123));
-Console.WriteLine(solution.Reverse(120));
+Console.WriteLine(solution.Reverse(123));
+//Console.WriteLine(solution.Reverse(-123));
+//Console.WriteLine(solution.Reverse(120));
 
 
