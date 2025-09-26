@@ -17,7 +17,14 @@ namespace PalindromeNumber
         public bool IsPalindrome(int x)
         {
 
+			if(x < 0)
+				return false;
 
+			char[] chars = x.ToString().ToCharArray();
+			chars.Reverse();
+			string reverse = chars.ToString();
+
+			int size = x.ToString().Length;
 
 
 
