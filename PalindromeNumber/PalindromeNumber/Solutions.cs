@@ -17,13 +17,18 @@ namespace PalindromeNumber
         public bool IsPalindrome(int x)
         {
 
-			if(x < 0)
+			// Negative values cannot be palindrom
+			if (x < 0)
 				return false;
 
+			string orignalOrder = x.ToString();
 			char[] chars = x.ToString().ToCharArray();
-			chars.Reverse();
-			string reverse = chars.ToString();
+			chars.Reverse().ToString();
 
+			if (string.IsNullOrEmpty(chars.ToString()))
+				return false;
+
+			string reverseOrder = new String(chars);
 			int size = x.ToString().Length;
 
 			var loopSize = x.ToString().Length;
@@ -36,18 +41,18 @@ namespace PalindromeNumber
 				loopSize = Math.Abs(loopSize / 2);
 			}
 
+			int counterFromBcak = size - 1;
 			for(int i = 0; i < loopSize; i++)
 			{
+				if (orignalOrder[i] != reverseOrder[counterFromBcak])
+				{
+					return false;
+				}
 
-
-
-
-
+				counterFromBcak -= 1;
 			}
 
-
-
-			return false;
+			return true;
         }
 
     }
