@@ -25,5 +25,5 @@ using PalindromeNumber;
 var solution = new Solutions();
 
 Console.WriteLine(solution.IsPalindrome(121));
-Console.WriteLine(solution.IsPalindrome(-121));
-Console.WriteLine(solution.IsPalindrome(10));
+//Console.WriteLine(solution.IsPalindrome(-121));
+//Console.WriteLine(solution.IsPalindrome(10));
