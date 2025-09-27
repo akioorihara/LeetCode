@@ -23,9 +23,9 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
  */
 using PalindromeNumber;
 
-var solution = new Solutions();
+var solution = new Solutions_v2();
 
 Console.WriteLine(solution.IsPalindrome(121));
-Console.WriteLine(solution.IsPalindrome(1221));
-Console.WriteLine(solution.IsPalindrome(-121));
-Console.WriteLine(solution.IsPalindrome(10));
+//Console.WriteLine(solution.IsPalindrome(1221));
+//Console.WriteLine(solution.IsPalindrome(-121));
+//Console.WriteLine(solution.IsPalindrome(10));
