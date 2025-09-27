@@ -26,6 +26,25 @@ namespace PalindromeNumber
 
 			int size = x.ToString().Length;
 
+			var loopSize = x.ToString().Length;
+			if(loopSize % 2 == 0)
+			{
+				loopSize = loopSize / 2;
+			}
+			else
+			{
+				loopSize = Math.Abs(loopSize / 2);
+			}
+
+			for(int i = 0; i < loopSize; i++)
+			{
+
+
+
+
+
+			}
+
 
 
 			return false;
