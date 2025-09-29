@@ -7,6 +7,11 @@ namespace RomanToInteger
 		{
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="s"></param>
+		/// <returns></returns>
         public int RomanToInt(string s)
         {
 
