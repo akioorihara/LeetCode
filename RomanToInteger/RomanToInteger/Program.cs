@@ -44,6 +44,11 @@ Input: s = "MCMXCIV"
 Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
+Example 4:
+Input: s = "IV"
+Output: 4 
+
+
  */
 
 using RomanToInteger;
